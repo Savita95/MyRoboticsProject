@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <body>
+       
+     
+       <form action = "http://localhost:5000/api" method = "post">
+        <p> 
+        {{ message }}
+        <p><input type = "hidden" name = "u_unit" value={{ message['u_progress'][0] }}></p>
+        <p><input type = "hidden" name = "u_topic" value={{ message['u_progress'][1] }}></p>
+        <p><input type = "hidden" name = "u_paragraph" value={{ message['u_progress'][2] }}></p>
+        <p><input type = "hidden" name = "times" value={{ message['times']}}></p>
+       </p>
+        User_input:
+        <p><input type = "text" name = "user_input" /></p> 
+		<p><input type = "submit" value = "submit" /></p> 
+    </form>
+    
+     </table>
+   </body>
+</html> 

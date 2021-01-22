@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>
+			Robot
+		</title>
+		<meta name="description" content="Example of using GIF files to bring text to speech voices to life in your browser.">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<h1>Robot</h1>
+
+	  <form action = "http://localhost:5000/api" method = "post">
+			<p> 
+		   <div style="text-align: left;background-color:gainsboro;padding: 30px 30px 30px 30px;width: 65%"> <b> Server:</b>	{{ message.output }} </div> 
+			<p><input type = "hidden" name = "u_unit" value={{ message['u_progress'][0] }}></p>
+			<p><input type = "hidden" name = "u_topic" value={{ message['u_progress'][1] }}></p>
+			<p><input type = "hidden" name = "u_paragraph" value={{ message['u_progress'][2] }}></p>
+			<p><input type = "hidden" name = "times" value={{ message['times']}}></p>
+			<p><input type = "hidden" name = "val_but" value="1"></p>
+			 </p>
+			 <p>
+			    <input type = "text" name = "user_input" id = "user_input"  style="width: 50%;float: left;" required/>
+			    <input type = "submit" value = "submit"  style="width: 10%;float: left;" />
+			</p>
+			</form>
+	
+		<div style="float: right;padding-right: 130px;">
+	
+		  
+				  <input id="happy" type="radio" name="smiley" value="Happy" class="hemo">
+				  <label for="happy" class="hemo">:)</label>
+				  <input id="normal" type="radio" name="smiley" value="Normal" class="nemo">
+				  <label for="normal" class="nemo">:|</label>
+				  <input id="angry" type="radio" name="smiley" value="Angry" class="aemo">
+				  <label for="angry" class="aemo">:(</label>
+				  <input id="sad" type="radio" name="smiley" value="Sad" class="semo">
+				  <label for="sad" class="semo">:&lt;</label>
+				  <input id="speech" type="radio" name="smiley" value="Speech" class="semo">
+				  <label for="speech" class="spemo">:&lt;</label>
+				
+				<br></br>
+				
+				<div class="smiley" >
+					<div class="eyes">
+					  <div class="eye"></div>
+					  <div class="eye"></div>
+					</div>
+				  <div class="mouth"></div>
+			  </div>
+	  </div>
+	 	
+	</div>
+	</div>
+	
+	
+		
+		
+		
+		
+		
+	<script type="text/javascript">
+	  
+		$(document).ready(function(){
+		
+		$(".hemo").hide();
+		$(".nemo").hide();
+		$(".aemo").hide();
+		$(".semo").hide();
+		$(".spemo").hide();
+		});
+		
+		
+	var x=add();
+		
+	function add(){
+	//-1,0,1,2
+
+	var output="{{message.output}}";
+	var u_input="{{message.u_input}}";
+	var emotracker="{{message.emotracker}}";
+	var emotracker2="{{message.emotracker2}}";
+	var val_but="{{message.val_but}}";
+	let utter = new SpeechSynthesisUtterance();
+	utter.lang = 'en-US';
+	utter.text = output;
+	utter.volume = 0.5;
+    console.log(emotracker,emotracker2,"emotracker2-1")
+
+	utter.onend = function() {
+
+		if(val_but==0){
+			$(".smiley.speech .mouth, #speech[type=radio]:checked ~ .smiley .mouth").css({"animation": "", "animation-delay": "", "animation-iteration-count": ""});
+		}else{
+			if( (emotracker=='1' && emotracker2=='0')){
+				$(".smiley.happy .mouth, #happy[type=radio]:checked ~ .smiley .mouth").css({"animation": "", "animation-delay": "", "animation-iteration-count": ""});
+			}else if((emotracker=='1' && emotracker2=='-1')|| (emotracker=='2' && emotracker2=='-1')|| (emotracker=='1' && emotracker2=='1')){
+				$(".smiley.speech .mouth, #speech[type=radio]:checked ~ .smiley .mouth").css({"animation": "", "animation-delay": "", "animation-iteration-count": ""});
+			}else if( (emotracker=='2' && emotracker2=='0')){
+				$(".smiley.sad .mouth, #sad[type=radio]:checked ~ .smiley .mouth").css({"animation": "", "animation-delay": "", "animation-iteration-count": ""});  
+   			}else if((emotracker=='3' && emotracker2=='-1')|| (emotracker=='3' && emotracker2=='0') || (emotracker=='3' && emotracker2=='1')){
+				$(".smiley.normal .mouth, #normal[type=radio]:checked ~ .smiley .mouth").css({"animation": "", "animation-delay": "", "animation-iteration-count": ""});
+
+   		}
+						
+		}
+
+
+	}
+	
+	
+	
+	
+	if(val_but==0){
+
+			$("#speech").click();
+			$(".smiley.speech .mouth, #speech[type=radio]:checked ~ .smiley .mouth").css({"border-top-left-radius": "100px","border-top-right-radius": "100px","border-bottom-left-radius": "100px","border-bottom-right-radius": "100px","height": "12%","width": "20%","bottom": "25%","margin-left": "-9%"});
+			setTimeout(function(){ 
+		  	$(".smiley.speech .mouth, #speech[type=radio]:checked ~ .smiley .mouth").css({"border-top-left-radius": "100px","border-top-right-radius": "100px","border-bottom-left-radius": "100px","border-bottom-right-radius": "100px","height": "12%","width": "20%","bottom": "25%","margin-left": "-9%","animation": "wink 0.6s", "animation-delay": "1s", "animation-iteration-count": "infinite"});
+		 	 window.speechSynthesis.speak(utter);
+		 	}, 5000);
+
+	}else{
+		 if((emotracker=='1' && emotracker2=='-1')|| (emotracker=='2' && emotracker2=='-1')|| (emotracker=='1' && emotracker2=='1')){
+			$("#speech").click();
+			$(".smiley.speech .mouth, #speech[type=radio]:checked ~ .smiley .mouth").css({"border-top-left-radius": "100px","border-top-right-radius": "100px","border-bottom-left-radius": "100px","border-bottom-right-radius": "100px","height": "12%","width": "20%","bottom": "25%","margin-left": "-9%"});
+		  	setTimeout(function(){ 
+				$(".smiley.speech .mouth, #speech[type=radio]:checked ~ .smiley .mouth").css({"border-top-left-radius": "100px","border-top-right-radius": "100px","border-bottom-left-radius": "100px","border-bottom-right-radius": "100px","height": "12%","width": "20%","bottom": "25%","left": "48%","animation": "wink 0.7s", "animation-delay": "1s", "animation-iteration-count": "infinite"});
+				window.speechSynthesis.speak(utter);
+		 	}, 5000);
+		 	
+		}else if(emotracker=='2' && emotracker2=='0'){
+			$("#sad").click();
+		  	setTimeout(function(){ 
+					$(".smiley.sad .mouth, #sad[type=radio]:checked ~ .smiley .mouth").css({"border-top-left-radius": "100px","border-top-right-radius": "100px","border-bottom-left-radius": "100px","border-bottom-right-radius": "100px","height": "12%","width": "20%","bottom": "25%","left": "63%","animation": "wink 0.7s", "animation-delay": "1s", "animation-iteration-count": "infinite"});
+				 window.speechSynthesis.speak(utter);
+		 	}, 5000);
+		}else if(emotracker=='1' && emotracker2=='0'){
+			$("#happy").click();
+		  	setTimeout(function(){ 
+					$(".smiley.happy .mouth, #happy[type=radio]:checked ~ .smiley .mouth").css({"border-top-left-radius": "100px","border-top-right-radius": "100px","border-bottom-left-radius": "100px","border-bottom-right-radius": "100px","height": "12%","width": "20%","bottom": "25%","left": "72%","animation": "wink 0.7s", "animation-delay": "1s", "animation-iteration-count": "infinite"});
+				 	window.speechSynthesis.speak(utter);
+		 	}, 5000);
+		}else if((emotracker=='3' && emotracker2=='-1')|| (emotracker=='3' && emotracker2=='0') || (emotracker=='3' && emotracker2=='1')){
+			$("#normal").click();
+		  	setTimeout(function(){ 
+					$(".smiley.normal .mouth, #normal[type=radio]:checked ~ .smiley .mouth").css({"border-top-left-radius": "100px","border-top-right-radius": "100px","border-bottom-left-radius": "100px","border-bottom-right-radius": "100px","height": "12%","width": "20%","bottom": "25%","left": "62%","animation": "wink 0.7s", "animation-delay": "1s", "animation-iteration-count": "infinite"});
+				    window.speechSynthesis.speak(utter);
+		 		
+		 	}, 5000);
+		}
+	}
+		
+		
+		
+	}
+		
+	</script>
+		
+		
+	</div>
+	</body>
+</html>

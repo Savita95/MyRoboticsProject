@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<script type="text/javascript">
+	  
+    $(document).ready(function(){
+        $("#hide_api").hide();
+    });
+</script>
+<body>
+    <center id="hide_api"><br></br><br></br>
+    <h1>Breast Cancer tutoring</h1> 
+    <form action = "http://localhost:5000/api" method = "post">
+        <p><input type = "hidden" name = "u_unit" value=1></p>
+        <p><input type = "hidden" name = "u_topic" value=1></p>
+        <p><input type = "hidden" name = "u_paragraph" value=1></p> 
+        <p><input type = "hidden" name = "times" value=0></p>
+        <p><input type = "hidden" name = "val_but" value=0></p>
+        User_input:
+        <p><input type = "text" name = "user_input" value="Savi"/></p> 
+		<p><input type = "submit" value = "submit" id="sub" /></p> 
+    </form>
+</center>  
+
+<script type="text/javascript">
+	  
+    $(document).ready(function(){
+        $("#sub").click();
+    });
+</script>
+</body>
+</html>
+
+
+
+ 
