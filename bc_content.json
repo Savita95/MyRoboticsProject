@@ -1,0 +1,32 @@
+{
+  "introduction_text" : "Welcome to the breast cancer tutoring system.  Using this program, you will learn basic information about breast cancer.",
+  "closing_text" : "Congratulations on your hard work!",
+  "overview" : [
+    {"question": "Where does breast cancer begin?", "answer" : "Cancer begins in the cells." },
+    {"question" : "What is cancer?", "answer" : "Cancer begins when the cells change and grow into a malignant tumor." },
+    {"question" : "What is a malignant tumor?", "answer" : "A tumor is a solid mass of tissue, or cells, which grows out of control." },
+    {"question" : "What happens if a malignant tumor is not removed?", "answer" : "If not removed or treated, cancer can spread to other parts of the body and become lethal." },
+    {"question" : "Is breast cancer deadly?", "answer" : "For the majority of women, breast cancer is not a death sentence." },
+    {"question" : "What is the breast cancer survival rate?", "answer" : "If the cancer has not spread to other organs, the 5-year survival rate is 90%." },
+    {"question" : "What factors impact survival rate?", "answer" : "Survival rate depends on many things, including how much the cancer has spread throughout the body, the woman’s overall health, and more."}
+  ],
+  "cancer_staging": [
+    {"question" : "What is breast cancer staging?", "answer" : "Staging is the process used to find out whether the cancer has spread within the breast or to other parts of the body." },
+    {"question" : "How many stages of breast cancer are there?", "answer" : "There are four stages of breast cancer." },
+    {"question" : "What is another name for Stage I and Stage II breast cancer?", "answer" : "Early-stage breast cancer." },
+    {"question" : "What is another name for Stage III breast cancer?", "answer" : "Locally advanced breast cancer." },
+    {"question" : "What is another name for Stage IV breast cancer?", "answer" : "Metastatic breast cancer." },
+    {"question" : "What is the definition of Stage IV breast cancer?", "answer" : "Stage IV is advanced cancer that has spread to other parts of the body, such as the liver, lungs, or brain." },
+    {"question" : "Which stage(s) of breast cancer have the highest survival rate?", "answer" : "Women with Stage I-III breast cancer have a much higher survival rate." },
+    {"question" : "Can Stage IV cancer be cured?", "answer" : "No, Stage IV cancer cannot be cured, but it can be managed."}
+  ],
+  "sample_topic" : [
+    {"question" : "", "answer" :  "" },
+    {"question" : "", "answer" :  "" },
+    {"question" : "", "answer" :  "" },
+    {"question" : "", "answer" :  "" }
+  ],
+  "_comment" : {
+    "resources" : ["Breast Cancer Content Guide.docx", "https://www.cancer.gov/about-cancer/understanding/what-is-cancer"]
+  }
+}

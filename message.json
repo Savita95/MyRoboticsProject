@@ -1,0 +1,35 @@
+{
+	"not_understood_move_on": [
+		"Thats ok, we will get back to it",
+		"Don't worry, we will get back to it",
+		"Don't be troubled, we will get back to it",
+		"Its ok, we will try someother time"
+	],
+	"understood_move_on": [
+		"Great. Let's move on",
+		"Let's continue.",
+		"let's go further",
+		"let's move on",
+		"Let's go on to the next topic"
+	],
+	"ask_understanding": [
+		"Is that clear ?",
+		"Did you understand ?",
+		"Was it clear?",
+      "So, are you clear on the meaning of {}?",
+      "Do you understand {}",
+      "Did you get that?"
+
+	],
+	"revisiting_messages": [
+		"Lets revisit the left over topics"
+	],
+	"success_messages": [
+		"Congratulations you mastered Unit 1"
+	],
+	"acknowledgments": [
+		"understood ?",
+		"ok ?",
+		"Got it ?"
+	]
+}

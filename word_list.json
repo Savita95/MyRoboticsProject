@@ -1,0 +1,34 @@
+{
+  "negation_list": [
+    "never",
+    "no",
+    "hardly",
+    "nobody",
+    "none",
+    "scarcely",
+    "no",
+    "barely",
+    "nowhere",
+    "rarely",
+    "somewhat",
+    "not",
+    "may be",
+    "barely",
+    "hardly",
+    "don't understand",
+    "I hate you",
+    "I didnt get you",
+    "I couldnt understand you",
+    "I dont Understand",
+     "Can you please pardon me",
+     "Can you repear",
+     "I am not clear on that topic"
+     
+     
+
+  ],
+  "neutral_list": ["ok","yes","may be","can you repeat","no","Can you please pardon me","not","Yes you can proceed"],
+  "positiveWord_list": ["yes","absolutely","great","ok","Yes you can proceed","I love you","I like you","awesome","great","got it","true","indeed",
+                        "I am clear","I understand"]
+}
+

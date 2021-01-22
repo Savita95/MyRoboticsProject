@@ -1,0 +1,22 @@
+werkzeug - WARNING -  * Debugger is active!
+werkzeug - INFO -  * Debugger PIN: 970-715-987
+werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+root - INFO - inside
+root - INFO - Using cosine similarity 
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2020 22:37:29] "[37mPOST /api HTTP/1.1[0m" 200 -
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2020 22:37:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+root - INFO - inside
+root - INFO - Using cosine similarity 
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2020 22:37:39] "[37mPOST /api HTTP/1.1[0m" 200 -
+root - INFO - inside
+root - INFO - Using cosine similarity 
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2020 22:38:37] "[37mPOST /api HTTP/1.1[0m" 200 -
+root - INFO - inside
+root - INFO - Using cosine similarity 
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2020 22:38:52] "[37mPOST /api HTTP/1.1[0m" 200 -
+root - INFO - inside
+root - INFO - Using cosine similarity 
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2020 22:39:20] "[37mPOST /api HTTP/1.1[0m" 200 -
+root - INFO - inside
+root - INFO - Using cosine similarity 
+werkzeug - INFO - 127.0.0.1 - - [09/Dec/2020 22:39:58] "[37mPOST /api HTTP/1.1[0m" 200 -

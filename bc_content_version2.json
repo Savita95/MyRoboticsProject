@@ -1,0 +1,153 @@
+ [
+	 {
+		 "unit_id": 1,
+		 "unit_name": "Understanding Breast Cancer and Prognosis",
+		 "topics": [
+			 {
+				 "topic_id": 1,
+				 "topic_name": "What is breast cancer",
+				 "contents": [
+					 {
+						 "paragraph_id": 1,
+						 "text": "Cancer begins in cells. Cells are the building blocks that make up all parts of our bodies, including our breasts.",
+						 "text_alt": ["Cells are the starting point for cancer, and they are also the building block for our body", "Breasts are made of cells and cells can act as a starting point for cancer.", "Cells are the building blocks of our body and are also the primary point for onset of cancer."],
+						 "question": "Where does breast cancer begin?",
+						 "alt_question": ["",""],
+						 "keywords": ["cancer","tumor","breast cancer"]
+					 },
+					 {
+						 "paragraph_id": 2,
+						 "text": "Cancer begins when the cells in the breast change and grow into a tumor.",
+						 "text_alt": ["Onset of cancer is when the cells in the breast change and grow into a tumor.", "Tumor is the indication for cancer", "When the cells in the breast change and grow into a tumor, its an indication for cancer"],
+						 "question": "How does cancer begin?",
+						 "alt_question": ["",""],
+						 "keywords": ["onset of cancer","tumor"]
+					 },
+					 {
+						 "paragraph_id": 3,
+						 "text": "If not removed or treated, a breast cancer tumor can spread to other parts of the body and become lethal.",
+						 "text_alt": ["Breast cancer tumor can spread to other parts of the body and become lethal if its not removed or treated. But there are wide variety of option for treatment and majority of women are cured of breast cancer", "Majority of women are cured with treatment, if not treated, a breast cancer tumor can spread to other parts of the body and become lethal."],
+						 "question": "What happens if a malignant tumor is not removed?",
+						 "alt_question": ["",""],
+						 "keywords": ["treatment","cancer cure"]
+					 },
+					 {
+
+						 "paragraph_id": 4,
+						 "text": "It is common for women to experience some concerns or side effects after they complete the main part of their cancer treatment (pain, fatigue, difficulty sleeping, hot flashes, worry). These side effects can lower your quality of life.",
+						 "text_alt": [],
+						 "question": "What are some common side effects after cancer treatment?",
+						 "alt_question": ["",""],
+						 "keywords": ["cancer treatment",""]
+					 },
+					 {
+						 "paragraph_id": 5,
+						 "text": "These days, there are many treatment options for breast cancer. For the majority of women, breast cancer is not a death sentence. If the cancer has not spread to other organs, the 5-year survival rate is 90%.",
+						 "text_alt": [],
+						 "question": "What is the breast cancer survival rate?",
+						 "alt_question": ["",""],
+						 "keywords": ["effects",""]
+					 }
+				 ]
+			 },
+			 {
+				 "topic_id": 2,
+				 "topic_name": "Staging and clinical characteristics of cancer",
+				 "contents": [
+					 {
+						 "paragraph_id": 1,
+						 "text": "You may have heard the words “cancer stage” before either from your doctor, nurse, or other women who have had cancer. Breast cancer is grouped, or classified, into several stages. These stages range from I (one) to IV (four).",
+						 "text_alt": [],
+						 "question": "How many stages of breast cancer are there?",
+						 "alt_question": ["",""],
+						 "keywords": ["cancer stage"]
+					 },
+					 {
+						 "paragraph_id": 2,
+						 "text": "The stage of your breast cancer depends on the size of your tumor and whether it has spread to other parts of the body. The stage of your breast cancer is usually determined after your surgery.",
+						 "text_alt": [],
+						 "question": "What factors are used to determine the stage of breast cancer?",
+						 "alt_question": ["",""],
+						 "keywords": ["size","spread"]
+					 },
+					 {
+						 "paragraph_id": 3,
+						 "text": "Breast cancer that is Stage I (one) or II (two) is considered early-stage breast cancer.",
+						 "text_alt": [],
+						 "question": "What is another name for Stage I and Stage II breast cancer?",
+						 "alt_question": ["",""],
+						 "keywords": ["early stage",""]
+					 },
+					 {
+						 "paragraph_id": 4,
+						 "text": "Breast cancer that is Stage III is locally advanced breast cancer.",
+						 "text_alt": [],
+						 "question": "What is another name for Stage III breast cancer?",
+						 "alt_question": ["",""],
+						 "keywords": ["Stage III"]
+					 },
+					 {
+						 "paragraph_id": 5,
+						 "text": "Breast cancer that is Stage IV is advanced cancer that has spread to other parts of the body, such as the liver, lungs, or brain. Stage IV breast cancer is also called metastatic breast cancer.",
+						 "text_alt": [],
+						 "question": "What is another name for Stage IV breast cancer, and what does this name mean?",
+						 "alt_question": ["",""],
+						 "keywords": ["metastatic","spread"]
+					 }
+				 ]
+			 }
+		 ]
+	 },
+	 {
+		 "unit_id": 2,
+		 "name": "Surgery Treatment",
+		 "topics": [
+			 {
+				 "topic_id": 1,
+				 "header": "",
+				 "contents": [
+					 {
+						 "paragraph_id": 1,
+						 "text": "cancer 1",
+						 "text_alt": [],
+						 "question": "",
+						 "alt_question": ["",""],
+						 "keywords": ["",""]
+					 },
+					 {
+						 "paragraph_id": 2,
+						 "text": "cancer 2",
+						 "text_alt": [],
+						 "question": "",
+						 "alt_question": ["",""],
+						 "keywords": ["",""]
+					 },
+					 {
+						 "paragraph_id": 3,
+						 "text": "cancer 3",
+						 "text_alt": [],
+						 "question": "",
+						 "alt_question": ["",""],
+						 "keywords": ["",""]
+					 },
+					 {
+						 "paragraph_id": 4,
+						 "text": "cancer 4",
+						 "text_alt": [],
+						 "question": "",
+						 "alt_question": ["",""],
+						 "keywords": ["",""]
+					 },
+					 {
+						 "paragraph_id": 5,
+						 "text": "cancer 5",
+						 "text_alt": [],
+						 "question": "",
+						 "alt_question": ["",""],
+						 "keywords": ["",""]
+					 }
+				 ]
+			 }
+		 ]
+	 }
+ ]

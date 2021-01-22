@@ -1,0 +1,22 @@
+#all mac hidden files
+*.DS_Store
+
+#all log files
+*.log
+
+#ignore contents of nlu_module_folder
+nlu_module_folder/old_resources/*
+nlu_module_folder/results-all-senate-full-matrix/*
+nlu_module_folder/small_demo_tests/*
+
+#corpora that we do not need to have on the cloud
+nlu_helper/corpora/20_newsgroups/*
+nlu_helper/corpora/all-senate-speeches.txt
+#models that are generated and saved for later read_model use
+nlu_helper/resources/all-senate-speeches/*
+nlu_helper/resources/movie-reviews/*
+#models that are generated
+nlu_helper/resources/*.json
+nlu_helper/resources/*.pkl
+
+_pycache_
